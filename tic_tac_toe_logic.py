@@ -1,4 +1,4 @@
-# tic_tac_toe.py
+# tic_tac_toe_logic.py
 import random
 from typing import List, Dict
 
