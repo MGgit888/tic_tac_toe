@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, session
-from tic_tac_toe import TicTacToeGame
+from tic_tac_toe_logic import TicTacToeGame
 import pickle
 
 app = Flask(__name__)
