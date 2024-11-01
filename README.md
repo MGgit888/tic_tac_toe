@@ -51,4 +51,4 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 # License
 
-This project is licensed under the gnu general public license (gpl).
+This project is licensed under the GNU GENERAL PUBLIC LICENSE.
