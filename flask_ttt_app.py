@@ -40,4 +40,5 @@ def reset_board():
 
 
 if __name__ == "__main__":
+    # you can alter the port used by the application by changing the next line to something like app.run(debug=True, port=5001)
     app.run(debug=True)
