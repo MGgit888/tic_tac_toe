@@ -2,13 +2,13 @@
 
 This project implements a simple Tic Tac Toe game using Flask for the backend logic and potentially a frontend framework (not included at this time) for the user interface. Though, if you want to use Postman you will see the game board pretty nicely.
 
-Installation
+# Installation
 
 Ensure you have Python 3 and pip installed on your system.
 Clone or download this repository.
 Open a terminal in the project directory and run `pip install flask`
 
-Usage
+# Usage
 
 Run the Flask application using the command: python flask_ttt_app.py
 This will start the development server, typically accessible at http://127.0.0.1:5000/ in your web browser. The exact port can be changed by editing the flask_ttt_app.py (see example within)
@@ -19,7 +19,7 @@ You can make a move by accessing the make-move endpoint with the json of the ind
 
 Once you make your move, the computer opponent will choose it's place for an O and it will be your turn again. 
 
-API Endpoints:
+# API Endpoints:
 
 GET /get-board: Retrieves the current state of the game board in JSON format.
 POST /make-move: Makes a move on the board. Send a JSON object with the following key:
@@ -30,7 +30,7 @@ POST /make-move: Makes a move on the board. Send a JSON object with the followin
         {"index": 3}
 POST /reset-board: Resets the game board to its initial state.
 
-Frontend Integration:
+# Frontend Integration:
 
 This project provides a basic backend for a Tic Tac Toe game. I'm happy to take suggestions on how best to approach this.
 
