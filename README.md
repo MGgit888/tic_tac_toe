@@ -13,7 +13,7 @@ Open a terminal in the project directory and run `pip install flask`
 Run the Flask application using the command: `python flask_ttt_app.py`
 This will start the development server, typically accessible at http://127.0.0.1:5000/ in your web browser. The exact port can be changed by editing the flask_ttt_app.py (see example within)
 
-Once up and running you can connect to http://127.0.0.1:5000/get-board in your browser or in Postman, or in curl by running `curl http://127.0.0.1:5000/get-board`
+Once up and running you can connect to http://127.0.0.1:5000/get-board in your browser or in Postman.
 
 You can make a move by accessing the make-move endpoint with the json of the index value you wish to replace with your X. Yes, that's right you can be either X or O as long as it's X.
 
@@ -22,8 +22,8 @@ Once you make your move, the computer opponent will choose it's place for an O a
 # API Endpoints:
 
 GET /get-board: Retrieves the current state of the game board in JSON format.
-    example (Curl)
-    `curl http://127.0.0.1:5000/get-board`
+    example (Postman GET)
+    http://127.0.0.1:5000/get-board
     should return something like
     {
     "row1": "123",
@@ -32,15 +32,13 @@ GET /get-board: Retrieves the current state of the game board in JSON format.
     }
 POST /make-move: Makes a move on the board. Send a JSON object with the following key:
     index: The index of the cell on the board (1-9).
-    example (from Postman)
+    example (from Postman POST)
     http://127.0.0.1:5000/make-move
         with json body as
         {"index": 3}
-    example (Curl on Windows)
-    `curl -X POST -H "Content-Type: application/json" -d "{\"index\": \"2\"}" http://127.0.0.1:5000/make-move `
 POST /reset-board: Resets the game board to its initial state.
-    example (Curl on Windows)
-    curl -X POST http://127.0.0.1:5000/reset-board
+    example (from Postman POST)
+    http://127.0.0.1:5000/reset-board
 
 # Frontend Integration:
 
